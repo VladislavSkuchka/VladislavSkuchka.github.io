@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Ubuntu', sans-serif;
+    border: none;
+}
+
+.collapsible {
+    background-color: #fff;
+    color: black;
+    cursor: pointer;
+    padding: 2rem;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-weight: 500;
+    font-size: 3.7rem;
+
+}
+
+.active,
+.collapsible:hover {
+    background-color: #353cac;
+    color: #fff;
+}
+
+.collapsible:after {
+    content: '\002B';
+    color: black;
+    font-weight: bold;
+    float: right;
+    margin-left: 0.4rem;
+}
+
+.active:after {
+    content: "\2212";
+    color: #ffff;
+}
+
+.content {
+    padding: 2rem;
+    max-height: 100%;
+    overflow: hidden;
+    display: block;
+    transition: max-height 0.2s ease-out;
+    background-color: #f1f1f1;
+}
+
+body main,
+footer {
+    padding: 0 5%;
+}
+
+header {
+    background-color: #353cac;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 7.5rem 50% 7.5rem 10rem;
+    color: #ffff;
+    margin-bottom: 10rem;
+}
+
+.mainImg {
+    border-radius: 100%;
+    height: 300px;
+    width: 300px;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 4.5rem;
+    margin-bottom: 3rem;
+}
+
+h2 {
+    font-weight: 500;
+    font-size: 3.7rem;
+
+}
+
+p {
+    font-weight: 400;
+    font-size: 2.8rem;
+    line-height: 1.7;
+}
+
+em {
+    color: #959ba6;
+    font-size: 2.5rem;
+}
+
+a {
+    display: block;
+    font-weight: 400;
+    font-size: 2.2rem;
+    margin-top: 4rem;
+}
+
+section {
+    margin: 5rem 0;
+    padding-right: 2%;
+}
+
+.headerInfo p {
+    font-size: 2rem;
+}
+
+
+/* MAIN */
+
+main {
+    display: flex;
+
+}
+
+.wrapper {
+    flex-direction: column;
+    width: 65%;
+
+}
+
+aside {
+    width: 35%;
+    flex-direction: column;
+}
+
+.levelDegree {
+    list-style: none;
+    display: block;
+}
+
+.btn {
+    height: 15px;
+    width: 68px;
+    background: #c6c8d6;
+    transform: skew(-35deg);
+}
+
+.checked {
+    height: 15px;
+    width: 68px;
+    background: #353cac;
+    transform: skew(-35deg);
+}
+
+/* Footer */
+
+.contacts {
+    display: flex;
+    justify-content: center;
+    padding-top: 3.13rem;
+    font-size: 2rem;
+}
+
+.contacts span i {
+    margin-right: 1rem;
+}
+
+.contacts span {
+    margin: 0 5%;
+}
+
+hr {
+    margin-top: 4.19rem;
+    height: 0.5rem;
+    background-color: #e9eaf0;
+
+}
