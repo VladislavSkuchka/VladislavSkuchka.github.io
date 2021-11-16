@@ -1,0 +1,1 @@
+VladislavSkuchkaCV.github.io
