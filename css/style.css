@@ -18,7 +18,7 @@
     text-align: left;
     outline: none;
     font-weight: 500;
-    font-size: 3.7rem;
+    font-size: 1.8rem;
 
 }
 
@@ -31,7 +31,6 @@
 .collapsible:after {
     content: '\002B';
     color: black;
-    font-weight: bold;
     float: right;
     margin-left: 0.4rem;
 }
@@ -60,9 +59,23 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 7.5rem 50% 7.5rem 10rem;
+    padding: 3rem;
     color: #ffff;
     margin-bottom: 10rem;
+}
+
+@media screen and (max-width: 671px){
+    header {
+        background-color: #353cac;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        padding: 3rem;
+        color: #ffff;
+        margin-bottom: 10rem;
+    }
+        
 }
 
 .mainImg {
@@ -71,34 +84,77 @@ header {
     width: 300px;
 }
 
+@media screen and (max-width: 1050px) {
+    .mainImg {
+        border-radius: 100%;
+        height: 150px;
+        width: 150px;
+    }
+}
+
 h1 {
     font-weight: 700;
     font-size: 4.5rem;
     margin-bottom: 3rem;
 }
 
-h2 {
-    font-weight: 500;
-    font-size: 3.7rem;
+@media screen and (max-width: 1050px) {
+    h1 {
+        font-weight: 500;
+        font-size: 2.5rem;
+        vertical-align: center;
+        margin-bottom: 1.8rem;
+    }
 
 }
 
+@media screen and (max-width: 440px) {
+    h1 {
+        font-weight: 500;
+        font-size: 1.8rem;
+        vertical-align: center;
+        margin-bottom: 1.8rem;
+        margin-top: 1.8rem;
+    }
+}
+
+h2 {
+    font-weight: 500;
+    font-size: 1.8rem;
+
+}
+
+/* @media screen and (max-width: 1050px) {
+    h2 {
+    font-weight: 500;
+    font-size: 3.7rem;
+
+    }
+} */
+
 p {
     font-weight: 400;
-    font-size: 2.8rem;
-    line-height: 1.7;
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+
+@media screen and (max-width: 1050px) {
+    p {
+        font-weight: 400;
+        font-size: 1.7rem    }
+
 }
 
 em {
     color: #959ba6;
-    font-size: 2.5rem;
+    font-size: 1.6rem;
 }
 
-a {
+main a {
     display: block;
     font-weight: 400;
-    font-size: 2.2rem;
-    margin-top: 4rem;
+    font-size: 1.5rem;
+    line-height: 4rem;
 }
 
 section {
@@ -110,6 +166,12 @@ section {
     font-size: 2rem;
 }
 
+@media screen and (max-width: 440px) {
+    .headerInfo p {
+        font-size: 1.2rem;
+    }
+}
+
 
 /* MAIN */
 
@@ -118,15 +180,35 @@ main {
 
 }
 
+@media screen and (max-width: 1000px) {
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
 .wrapper {
     flex-direction: column;
     width: 65%;
 
 }
 
+       
 aside {
     width: 35%;
     flex-direction: column;
+}
+
+@media screen and (max-width: 1000px) {
+    .wrapper {
+        width: 100%;
+    }
+
+    aside {
+        width: 100%;
+    }
+
+
 }
 
 .levelDegree {
@@ -135,17 +217,34 @@ aside {
 }
 
 .btn {
-    height: 15px;
-    width: 68px;
+    height: 10px;
+    width: 44px;
     background: #c6c8d6;
     transform: skew(-35deg);
 }
 
 .checked {
-    height: 15px;
-    width: 68px;
+    height: 10px;
+    width: 44px;
     background: #353cac;
     transform: skew(-35deg);
+}
+
+@media screen and (max-width: 340px){
+    .btn {
+        height: 10px;
+        width: 32px;
+        background: #c6c8d6;
+        transform: skew(-35deg);
+    }
+    
+    .checked {
+        height: 10px;
+        width: 32px;
+        background: #353cac;
+        transform: skew(-35deg);
+    }
+        
 }
 
 /* Footer */
@@ -154,7 +253,17 @@ aside {
     display: flex;
     justify-content: center;
     padding-top: 3.13rem;
-    font-size: 2rem;
+    font-size: 1.1rem;
+}
+
+@media screen and (max-width: 671px){
+    .contacts {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding-top: 3.13rem;
+        font-size: 1.1rem;
+    }
 }
 
 .contacts span i {
@@ -164,6 +273,19 @@ aside {
 .contacts span {
     margin: 0 5%;
 }
+
+@media screen and (max-width: 900px) {
+    .contacts span {
+        margin: 0 1%;
+    }
+}
+
+@media screen and (max-width: 671px){
+    .contacts span {
+        margin: 5% auto;
+    }
+}
+
 
 hr {
     margin-top: 4.19rem;
